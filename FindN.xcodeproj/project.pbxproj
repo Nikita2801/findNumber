@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		63BCB5E226B6CF0A00045CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5E126B6CF0A00045CB0 /* AppDelegate.swift */; };
-		63BCB5E626B6CF0A00045CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5E526B6CF0A00045CB0 /* ViewController.swift */; };
 		63BCB5E926B6CF0A00045CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BCB5E726B6CF0A00045CB0 /* Main.storyboard */; };
 		63BCB5EB26B6CF0B00045CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BCB5EA26B6CF0B00045CB0 /* Assets.xcassets */; };
 		63BCB5EE26B6CF0B00045CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BCB5EC26B6CF0B00045CB0 /* LaunchScreen.storyboard */; };
+		63BCB5FA26B6E02900045CB0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5F926B6E02900045CB0 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63BCB5DE26B6CF0A00045CB0 /* FindN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BCB5E126B6CF0A00045CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63BCB5E526B6CF0A00045CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63BCB5E826B6CF0A00045CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63BCB5EA26B6CF0B00045CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BCB5ED26B6CF0B00045CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63BCB5EF26B6CF0B00045CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BCB5F926B6E02900045CB0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,46 @@
 		63BCB5E026B6CF0A00045CB0 /* FindN */ = {
 			isa = PBXGroup;
 			children = (
+				63BCB5F526B6DFBF00045CB0 /* MVC */,
 				63BCB5E126B6CF0A00045CB0 /* AppDelegate.swift */,
-				63BCB5E526B6CF0A00045CB0 /* ViewController.swift */,
-				63BCB5E726B6CF0A00045CB0 /* Main.storyboard */,
 				63BCB5EA26B6CF0B00045CB0 /* Assets.xcassets */,
-				63BCB5EC26B6CF0B00045CB0 /* LaunchScreen.storyboard */,
 				63BCB5EF26B6CF0B00045CB0 /* Info.plist */,
 			);
 			path = FindN;
+			sourceTree = "<group>";
+		};
+		63BCB5F526B6DFBF00045CB0 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				63BCB5F826B6DFDC00045CB0 /* Controller */,
+				63BCB5F726B6DFD400045CB0 /* View */,
+				63BCB5F626B6DFCA00045CB0 /* Model */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		63BCB5F626B6DFCA00045CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63BCB5F726B6DFD400045CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63BCB5EC26B6CF0B00045CB0 /* LaunchScreen.storyboard */,
+				63BCB5E726B6CF0A00045CB0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63BCB5F826B6DFDC00045CB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63BCB5F926B6E02900045CB0 /* GameViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63BCB5E626B6CF0A00045CB0 /* ViewController.swift in Sources */,
+				63BCB5FA26B6E02900045CB0 /* GameViewController.swift in Sources */,
 				63BCB5E226B6CF0A00045CB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
