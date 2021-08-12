@@ -52,10 +52,10 @@ class Game {
     
     private var updateTimer:((StatusGame,Int) -> ())
     
-    init(countItem:Int, time:Int, updateTimer: @escaping (_ status:StatusGame,_ seconds:Int) -> ()) {
+    init(countItem:Int, updateTimer: @escaping (_ status:StatusGame,_ seconds:Int) -> ()) {
         self.countItem = countItem
-        self.timeForGame = time
-        self.secondsGame = time
+        self.timeForGame = Settings.shared.currentSettings.timeForGame
+        self.secondsGame = self.timeForGame
         self.updateTimer = updateTimer
         setupGame()
     }
@@ -70,11 +70,15 @@ class Game {
         
         nextItem = items.shuffled().first
         
+        
         updateTimer(status,secondsGame)
         
+        if Settings.shared.currentSettings.timerState{
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] (_) in
             self?.secondsGame -= 1
+            print("Timer")
         })
+        }
     }
     
     func newGame(){
@@ -99,7 +103,7 @@ class Game {
         }
     }
     
-    private func stopGame() {
+     func stopGame() {
         timer?.invalidate()
     }
     

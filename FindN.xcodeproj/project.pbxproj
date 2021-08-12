@@ -13,6 +13,9 @@
 		63BCB5EE26B6CF0B00045CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BCB5EC26B6CF0B00045CB0 /* LaunchScreen.storyboard */; };
 		63BCB5FA26B6E02900045CB0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5F926B6E02900045CB0 /* GameViewController.swift */; };
 		63BCB5FC26B6E65900045CB0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5FB26B6E65900045CB0 /* Game.swift */; };
+		63BCB5FE26C535A200045CB0 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5FD26C535A200045CB0 /* SelectTimeViewController.swift */; };
+		63BCB60026C535D900045CB0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB5FF26C535D900045CB0 /* SettingsTableViewController.swift */; };
+		63BCB60226C560C800045CB0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCB60126C560C800045CB0 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		63BCB5EF26B6CF0B00045CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63BCB5F926B6E02900045CB0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		63BCB5FB26B6E65900045CB0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		63BCB5FD26C535A200045CB0 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		63BCB5FF26C535D900045CB0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		63BCB60126C560C800045CB0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				63BCB5FB26B6E65900045CB0 /* Game.swift */,
+				63BCB60126C560C800045CB0 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				63BCB5F926B6E02900045CB0 /* GameViewController.swift */,
+				63BCB5FD26C535A200045CB0 /* SelectTimeViewController.swift */,
+				63BCB5FF26C535D900045CB0 /* SettingsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BCB60226C560C800045CB0 /* Settings.swift in Sources */,
 				63BCB5FA26B6E02900045CB0 /* GameViewController.swift in Sources */,
+				63BCB60026C535D900045CB0 /* SettingsTableViewController.swift in Sources */,
 				63BCB5FC26B6E65900045CB0 /* Game.swift in Sources */,
 				63BCB5E226B6CF0A00045CB0 /* AppDelegate.swift in Sources */,
+				63BCB5FE26C535A200045CB0 /* SelectTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
